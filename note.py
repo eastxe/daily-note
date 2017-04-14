@@ -4,10 +4,15 @@
 import os
 import datetime
 
+import click
 
-def daily_note():
+
+@click.command()
+@click.option('--atom', is_flag='True')
+def daily_note(atom):
     date = int(today())
-    os.system('zsh -c "vim ~/Documents/daily-memo/%d.md"' % date)
+    editor = 'atom' if atom else 'vim'
+    os.system('zsh -c "%s ~/Documents/daily-memo/%d.md"' % (editor, date))
 
 
 def today():
