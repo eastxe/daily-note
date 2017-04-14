@@ -1,4 +1,7 @@
 # daily-note
+
+edit daily note @ ~/Documents/daily-note/
+
 ## Usage
 
 ```
