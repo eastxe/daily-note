@@ -12,7 +12,9 @@ import click
 def daily_note(atom):
     date = int(today())
     editor = 'atom' if atom else 'vim'
-    os.system('zsh -c "%s ~/Documents/daily-memo/%d.md"' % (editor, date))
+    if not os.path.exists(os.path.expanduser('~/Documents/daily-note')):
+        os.mkdir(os.path.expanduser('~/Documents/daily-note'))
+    os.system('zsh -c "%s ~/Documents/daily-note/%d.md"' % (editor, date))
 
 
 def today():
