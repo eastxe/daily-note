@@ -3,6 +3,7 @@
 
 import os
 import datetime
+from pipes import quote
 
 import click
 
@@ -19,7 +20,7 @@ def daily_note(atom, name):
         os.system('zsh -c "%s ~/Documents/daily-note/%d.md"' % (editor, date))
     else:
         os.system('zsh -c "%s ~/Documents/daily-note/repository/%s.md"'
-                % (editor, name))
+                % (editor, quote(name)))
 
 
 def today():
