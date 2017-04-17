@@ -2,6 +2,9 @@
 
 edit daily note @ ~/Documents/daily-note/
 
+
+inspired by https://github.com/hitode909/atom-open-daily-memo 
+
 ## Usage
 
 ```
