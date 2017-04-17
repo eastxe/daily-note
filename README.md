@@ -9,11 +9,17 @@ note
 ```
 open YYYYMMDD.md by vim
 
+### option
 
 ```
 note --atom
 ```
-open YYYYMMDD.md by atom
+open file by atom
+
+```
+note [--name|-n] <filename>
+```
+open <filename>.md
 
 ## Install
 
