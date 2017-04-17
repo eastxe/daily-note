@@ -19,7 +19,7 @@ open file by atom
 ```
 note [--name|-n] <filename>
 ```
-open <filename>.md
+open `<filename>.md`
 
 ## Install
 
